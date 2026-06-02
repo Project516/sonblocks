@@ -3,7 +3,6 @@ package dev.project516.sonblocks.util;
 import dev.project516.sonblocks.SonBlocks;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
-import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
@@ -12,18 +11,21 @@ import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.material.MapColor;
 import net.neoforged.bus.api.IEventBus;
+import net.neoforged.neoforge.registries.DeferredBlock;
 import net.neoforged.neoforge.registries.DeferredHolder;
+import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
 
 import java.util.LinkedHashMap;
 import java.util.Map;
 
 public class RegistryHandler {
-    public static final DeferredRegister<Block> BLOCKS = DeferredRegister.create(Registries.BLOCK, SonBlocks.MOD_ID);
-    public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(Registries.ITEM, SonBlocks.MOD_ID);
+    public static final DeferredRegister.Blocks BLOCKS = DeferredRegister.createBlocks(SonBlocks.MOD_ID);
+    public static final DeferredRegister.Items ITEMS = DeferredRegister.createItems(SonBlocks.MOD_ID);
     public static final DeferredRegister<CreativeModeTab> TABS = DeferredRegister.create(Registries.CREATIVE_MODE_TAB, SonBlocks.MOD_ID);
 
-    public static final DeferredHolder<Item, Item> RUBY = ITEMS.register("ruby", () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> RUBY = ITEMS.registerItem("ruby",
+            Item::new, () -> new Item.Properties());
 
     private static final String[] ORE_NAMES = {
         "ruby_block", "handsonitizer", "herecomestheson", "jimmydonaldson",
@@ -32,7 +34,7 @@ public class RegistryHandler {
         "sonset", "sonsonsonsahur", "sony", "woodrowwilson"
     };
 
-    public static final Map<String, DeferredHolder<Block, Block>> ORES = new LinkedHashMap<>();
+    public static final Map<String, DeferredBlock<Block>> ORES = new LinkedHashMap<>();
 
     static {
         for (String name : ORE_NAMES) {
@@ -40,14 +42,14 @@ public class RegistryHandler {
         }
     }
 
-    private static DeferredHolder<Block, Block> registerBlock(String name) {
-        DeferredHolder<Block, Block> block = BLOCKS.register(name,
-                () -> new Block(BlockBehaviour.Properties.of()
+    private static DeferredBlock<Block> registerBlock(String name) {
+        var block = BLOCKS.registerBlock(name, Block::new,
+                () -> BlockBehaviour.Properties.of()
                         .mapColor(MapColor.METAL)
                         .strength(5.0f, 6.0f)
                         .sound(SoundType.METAL)
-                        .requiresCorrectToolForDrops()));
-        ITEMS.register(name, () -> new BlockItem(block.get(), new Item.Properties()));
+                        .requiresCorrectToolForDrops());
+        ITEMS.registerSimpleBlockItem(name, block, () -> new Item.Properties());
         return block;
     }
 

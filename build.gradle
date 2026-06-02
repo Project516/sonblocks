@@ -41,7 +41,7 @@ neoForge {
     }
 
     mods {
-        "${mod_id}" {
+        sonblocks {
             sourceSet sourceSets.main
         }
     }

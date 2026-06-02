@@ -1,6 +1,7 @@
 modLoader="javafml"
 loaderVersion="[4,)"
 issueTrackerURL="https://github.com/project516/sonblocks/issues"
+license="AGPL-3.0-or-later"
 [[mods]]
 modId="sonblocks"
 version="${file.jarVersion}"

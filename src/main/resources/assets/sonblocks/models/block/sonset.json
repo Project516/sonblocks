@@ -1,6 +1,6 @@
 {
   "parent": "block/cube_all",
   "textures": {
-    "all": "sonblocks:blocks/sonset"
+    "all": "sonblocks:block/sonset"
   }
 }
