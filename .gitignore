@@ -23,3 +23,9 @@ run
 
 # Files from Forge MDK
 forge*changelog.txt
+
+# Generated resources
+src/generated/
+
+# Local Maven repo
+repo/

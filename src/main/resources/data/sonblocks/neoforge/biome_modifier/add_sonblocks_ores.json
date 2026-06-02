@@ -1,0 +1,25 @@
+{
+  "type": "neoforge:add_features",
+  "biomes": "#minecraft:is_overworld",
+  "features": [
+    "sonblocks:ruby_block_placed",
+    "sonblocks:handsonitizer_placed",
+    "sonblocks:herecomestheson_placed",
+    "sonblocks:jimmydonaldson_placed",
+    "sonblocks:mathequason_placed",
+    "sonblocks:michaeljackson_placed",
+    "sonblocks:sonar_placed",
+    "sonblocks:song_placed",
+    "sonblocks:songebob_placed",
+    "sonblocks:songolia_placed",
+    "sonblocks:songress_placed",
+    "sonblocks:sonnet_placed",
+    "sonblocks:sonopoly_placed",
+    "sonblocks:sonoravirus_placed",
+    "sonblocks:sonset_placed",
+    "sonblocks:sonsonsonsahur_placed",
+    "sonblocks:sony_placed",
+    "sonblocks:woodrowwilson_placed"
+  ],
+  "step": "underground_ores"
+}

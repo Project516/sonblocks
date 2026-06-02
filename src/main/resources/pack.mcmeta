@@ -1,7 +1,6 @@
 {
     "pack": {
         "description": "sonblocks resources",
-        "pack_format": 5,
-        "_comment": "sonblocks."
+        "pack_format": 43
     }
 }
