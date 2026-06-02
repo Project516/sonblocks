@@ -1,9 +1,9 @@
-package dev.project516.playerevolutions.util;
+package dev.project516.coolmod.util;
 
-import dev.project516.playerevolutions.PlayerEvolutions;
-import dev.project516.playerevolutions.blocks.BlockItemBase;
-import dev.project516.playerevolutions.blocks.RubyBlock;
-import dev.project516.playerevolutions.items.ItemBase;
+import dev.project516.coolmod.CoolMod;
+import dev.project516.coolmod.blocks.BlockItemBase;
+import dev.project516.coolmod.blocks.RubyBlock;
+import dev.project516.coolmod.items.ItemBase;
 import net.minecraft.block.Block;
 import net.minecraft.item.Item;
 import net.minecraftforge.fml.RegistryObject;
@@ -12,8 +12,8 @@ import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 
 public class RegistryHandler {
-    public static final DeferredRegister<Item> ITEMS = new DeferredRegister<>(ForgeRegistries.ITEMS, PlayerEvolutions.MOD_ID);
-    public static final DeferredRegister<Block> BLOCKS = new DeferredRegister<>(ForgeRegistries.BLOCKS, PlayerEvolutions.MOD_ID);
+    public static final DeferredRegister<Item> ITEMS = new DeferredRegister<>(ForgeRegistries.ITEMS, CoolMod.MOD_ID);
+    public static final DeferredRegister<Block> BLOCKS = new DeferredRegister<>(ForgeRegistries.BLOCKS, CoolMod.MOD_ID);
 
     public static void init() {
         ITEMS.register(FMLJavaModLoadingContext.get().getModEventBus());

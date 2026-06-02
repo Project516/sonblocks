@@ -1,10 +1,9 @@
-package dev.project516.playerevolutions;
+package dev.project516.coolmod;
 
-import dev.project516.playerevolutions.util.RegistryHandler;
+import dev.project516.coolmod.util.RegistryHandler;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
 import net.minecraftforge.common.MinecraftForge;
-import net.minecraftforge.eventbus.api.Event;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
@@ -12,12 +11,12 @@ import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-@Mod("playerevolutions")
-public class PlayerEvolutions {
+@Mod("coolmod")
+public class CoolMod {
     private static final Logger LOGGER = LogManager.getLogger();
-    public static final String MOD_ID = "playerevolutions";
+    public static final String MOD_ID = "coolmod";
 
-    public PlayerEvolutions() {
+    public CoolMod() {
         FMLJavaModLoadingContext.get().getModEventBus().addListener(this::setup);
         FMLJavaModLoadingContext.get().getModEventBus().addListener(this::doClientStuff);
         RegistryHandler.init();
@@ -32,7 +31,7 @@ public class PlayerEvolutions {
 
     }
 
-    public static final ItemGroup TAB = new ItemGroup("playerevolutions") {
+    public static final ItemGroup TAB = new ItemGroup("coolmod") {
         @Override
         public ItemStack createIcon() {
             return new ItemStack(RegistryHandler.RUBY.get());

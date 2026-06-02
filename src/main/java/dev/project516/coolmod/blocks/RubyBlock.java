@@ -1,4 +1,4 @@
-package dev.project516.playerevolutions.blocks;
+package dev.project516.coolmod.blocks;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
