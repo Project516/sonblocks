@@ -24,7 +24,7 @@ From playing with friends, to making a meme modpack, the son blocks mod's new ad
 
 ## Compatibility
 
-Currently supports neoforge 26.1.2
+Currently, this mod supports NeoForge 26.1.2
 
 ## Download
 
