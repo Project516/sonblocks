@@ -2,7 +2,6 @@
   "type": "neoforge:add_features",
   "biomes": "#minecraft:is_overworld",
   "features": [
-    "sonblocks:ruby_block_placed",
     "sonblocks:handsonitizer_placed",
     "sonblocks:herecomestheson_placed",
     "sonblocks:jimmydonaldson_placed",
