@@ -1,6 +1,6 @@
 # son blocks
 
-![son](src/main/resources/logo.png)
+![screenshot](src/main/resources/screenshot.png)
 
 Add the son meme into Minecraft as custom blocks!
 

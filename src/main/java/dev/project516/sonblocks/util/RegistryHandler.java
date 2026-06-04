@@ -26,7 +26,7 @@ public class RegistryHandler {
 
     private static final String[] ORE_NAMES = {
         "handsonitizer", "herecomestheson", "jimmydonaldson",
-        "mathequason", "michaeljackson", "sonar", "song", "songebob",
+        "mathequason", "michaeljackson", "son", "sonar", "song", "songebob",
         "songolia", "songress", "sonnet", "sonopoly", "sonoravirus",
         "sonset", "sonsonsonsahur", "sony", "woodrowwilson"
     };
@@ -53,6 +53,7 @@ public class RegistryHandler {
     public static final DeferredHolder<CreativeModeTab, CreativeModeTab> SONBLOCKS_TAB = TABS.register("sonblocks",
             () -> CreativeModeTab.builder()
                     .title(Component.translatable("itemGroup.sonblocks"))
+                    .icon(() -> new ItemStack(ORES.get("son").get()))
                     .displayItems((params, output) -> {
                         ORES.values().forEach(block -> output.accept(block.get()));
                     })
