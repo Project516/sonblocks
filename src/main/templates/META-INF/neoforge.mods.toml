@@ -1,0 +1,9 @@
+license="${mod_license}"
+
+[[mods]]
+modId="${mod_id}"
+version="${mod_version}"
+displayName="${mod_name}"
+logoFile="logo.png"
+description='''adds the son meme into minecraft as custom blocks'''
+authors="project516"
