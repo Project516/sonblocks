@@ -24,11 +24,8 @@ public class RegistryHandler {
     public static final DeferredRegister.Items ITEMS = DeferredRegister.createItems(SonBlocks.MOD_ID);
     public static final DeferredRegister<CreativeModeTab> TABS = DeferredRegister.create(Registries.CREATIVE_MODE_TAB, SonBlocks.MOD_ID);
 
-    public static final DeferredItem<Item> RUBY = ITEMS.registerItem("ruby",
-            Item::new, () -> new Item.Properties());
-
     private static final String[] ORE_NAMES = {
-        "ruby_block", "handsonitizer", "herecomestheson", "jimmydonaldson",
+        "handsonitizer", "herecomestheson", "jimmydonaldson",
         "mathequason", "michaeljackson", "sonar", "song", "songebob",
         "songolia", "songress", "sonnet", "sonopoly", "sonoravirus",
         "sonset", "sonsonsonsahur", "sony", "woodrowwilson"
@@ -56,9 +53,7 @@ public class RegistryHandler {
     public static final DeferredHolder<CreativeModeTab, CreativeModeTab> SONBLOCKS_TAB = TABS.register("sonblocks",
             () -> CreativeModeTab.builder()
                     .title(Component.translatable("itemGroup.sonblocks"))
-                    .icon(() -> new ItemStack(RUBY.get()))
                     .displayItems((params, output) -> {
-                        output.accept(RUBY.get());
                         ORES.values().forEach(block -> output.accept(block.get()));
                     })
                     .build());
