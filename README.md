@@ -1,6 +1,6 @@
 # son blocks
 
-![screenshot](assets/screenshot.png)
+![screenshot](https://raw.githubusercontent.com/Project516/sonblocks/refs/heads/master/assets/screenshot.png)
 
 Add the son meme into Minecraft as custom blocks!
 
