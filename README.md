@@ -1,5 +1,8 @@
 # son blocks
 
+[![Modrinth](https://img.shields.io/modrinth/dt/sonblocks?color=00AF5C&label=downloads&logo=modrinth)](https://modrinth.com/mod/sonblocks)
+[![CurseForge](https://cf.way2muchnoise.eu/full_1565781_downloads.svg)](https://www.curseforge.com/minecraft/mc-mods/son-blocks)
+
 ![screenshot](https://raw.githubusercontent.com/Project516/sonblocks/refs/heads/master/assets/screenshot.png)
 
 Add the son meme into Minecraft as custom blocks!
@@ -28,6 +31,6 @@ Currently, this mod supports NeoForge 26.1.2
 
 ## Download
 
-Download the latest version on GitHub releases!
+Download on [Modrinth](https://modrinth.com/mod/sonblocks) or [CurseForge](https://www.curseforge.com/minecraft/mc-mods/son-blocks)!
 
 #### Made by [project516](https://project516.dev)
