@@ -11,10 +11,36 @@ Add the son meme into Minecraft as custom blocks!
 
 son blocks adds a variety of new blocks, from the popular [son meme](https://antifandom.com/meme/wiki/Son).
 
-## Key Features
+### Key Features
 
 * New meme blocks based off of a meme
 * Blocks generate as ores in the overworld
+
+### List of added blocks:
+
+* hand**son**itizer
+* herecomesthe**son**
+* jimmydonald**son**
+* mathequa**son**
+* michaeljack**son**
+* **son**
+* **son**ar
+* **son**g
+* **son**gebob
+* **son**golia
+* **son**gress
+* **son**net
+* **son**opoly
+* **son**oravirus
+* **son**set
+* **sonsonson**sahur
+* **son**y
+* woodrowwill**son**
+
+### Survival mode
+
+These blocks randomly spawn as ores with the terrain generation. In survival mode, use a stone pickaxe or higher to obtain the blocks.
+They are currently for decorational purposes only.
 
 ## Why would you want this?
 
