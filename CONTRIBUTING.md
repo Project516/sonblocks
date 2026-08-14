@@ -1,12 +1,12 @@
-# Contributing to Son Blocks
+# Contributing to son blocks
 
 Thanks for your interest in contributing! This guide will help you get started.
 
 ## Prerequisites
 
-- **Java 25** — The mod targets Java 25 as shipped with NeoForge 26.1.2
-- **Gradle** — The project includes the Gradle wrapper (`./gradlew`), so no separate Gradle installation is required
-- **Git** — For version control
+- **Java 25**: The mod targets Java 25 as shipped with NeoForge 26.1.2
+- **Gradle**: The project includes the Gradle wrapper (`./gradlew`), so no separate Gradle installation is required
+- **Git**: For version control
 
 ## Building from Source
 
@@ -63,7 +63,7 @@ Import the project as a Gradle project. Make sure your IDE is configured to use 
 
 - Follow existing Java conventions used in the project
 - Use UTF-8 encoding (configured in `build.gradle`)
-- Keep changes focused — one feature or fix per PR
+- Keep changes focused. One feature or fix per PR
 
 ## Data Generation
 
