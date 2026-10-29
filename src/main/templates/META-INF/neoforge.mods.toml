@@ -7,3 +7,17 @@ displayName="${mod_name}"
 bannerFile="logo.png"
 description='''adds the son meme into minecraft as custom blocks'''
 authors="project516"
+
+[[dependencies.${mod_id}]]
+modId="neoforge"
+type="required"
+versionRange="[${neo_version},)"
+ordering="NONE"
+side="BOTH"
+
+[[dependencies.${mod_id}]]
+modId="minecraft"
+type="required"
+versionRange="${minecraft_version_range}"
+ordering="NONE"
+side="BOTH"
