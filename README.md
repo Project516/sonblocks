@@ -59,4 +59,4 @@ Currently, this mod supports NeoForge 26.3
 
 Download on [Modrinth](https://modrinth.com/mod/sonblocks) or [CurseForge](https://www.curseforge.com/minecraft/mc-mods/son-blocks)!
 
-#### Made by [project516](https://project516.dev)
+**Made by [project516](https://project516.dev)**
